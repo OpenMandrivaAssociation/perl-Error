@@ -1,6 +1,6 @@
 %define module  Error
 %define name    perl-%{module}
-%define version 0.17001
+%define version 0.17008
 %define release %mkrel 1
 
 Name:           %{name}
