@@ -1,6 +1,6 @@
 %define module  Error
 %define name    perl-%{module}
-%define version 0.17008
+%define version 0.17009
 %define release %mkrel 1
 
 Name:           %{name}
@@ -10,10 +10,7 @@ License:        GPL or Artistic
 Group:          Development/Perl
 Summary:        Error/exception handling in an OO-ish way
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Config/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:  perl-devel
-%endif
+Source:         http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{module}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
