@@ -12,7 +12,6 @@ Summary:        Error/exception handling in an OO-ish way
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{module}-%{version}.tar.gz
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 The Error package provides two interfaces. Firstly Error
