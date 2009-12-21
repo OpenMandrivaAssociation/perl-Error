@@ -1,18 +1,18 @@
-%define module  Error
-%define name    perl-%{module}
-%define version 0.17015
-%define release %mkrel 3
+%define upstream_name    Error
+%define upstream_version 0.17016
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-License:        GPL or Artistic
-Group:          Development/Perl
-Summary:        Error/exception handling in an OO-ish way
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{module}-%{version}.tar.gz
-BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Error/exception handling in an OO-ish way
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{upstream_name}-%{upstream_version}.tar.gz
+
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 The Error package provides two interfaces. Firstly Error
@@ -24,14 +24,14 @@ Errors in the class Error should not be thrown directly,
 but the user should throw errors from a sub-class of Error.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
@@ -46,4 +46,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/Error
 %{perl_vendorlib}/Error.pm
 %{_mandir}/*/*
-
