@@ -1,9 +1,9 @@
 %define upstream_name    Error
-%define upstream_version 0.17016
+%define upstream_version 0.17019
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	1
 Epoch:		1
 
 Summary:	Error/exception handling in an OO-ish way
