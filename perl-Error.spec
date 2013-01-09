@@ -13,7 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
-BuildRequires:	perl(JSON::PP)
+BuildRequires:	perl-JSON-PP
 BuildArch:	noarch
 
 %description
