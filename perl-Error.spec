@@ -1,15 +1,15 @@
 %define modname	Error
-%define modver 0.17022
+%define modver 0.17023
 
 Summary:	Error/exception handling in an OO-ish way
 Name:		perl-%{modname}
 Epoch:		1
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/Error-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
@@ -27,7 +27,7 @@ but the user should throw errors from a sub-class of Error.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -41,6 +41,3 @@ but the user should throw errors from a sub-class of Error.
 %{perl_vendorlib}/Error
 %{perl_vendorlib}/Error.pm
 %{_mandir}/man3/*
-
-
-
