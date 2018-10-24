@@ -1,5 +1,5 @@
 %define modname	Error
-%define modver 0.17025
+%define modver 0.17026
 
 Summary:	Error/exception handling in an OO-ish way
 Name:		perl-%{modname}
