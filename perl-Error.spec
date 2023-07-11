@@ -5,7 +5,7 @@ Summary:	Error/exception handling in an OO-ish way
 Name:		perl-%{modname}
 Epoch:		1
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
