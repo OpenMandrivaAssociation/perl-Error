@@ -1,15 +1,15 @@
 %define modname	Error
-%define modver 0.17026
+%define modver 0.17030
 
 Summary:	Error/exception handling in an OO-ish way
 Name:		perl-%{modname}
 Epoch:		1
-Version:	%perl_convert_version %{modver}
+Version:	%{modver}
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/Error-%{modver}.tar.gz
+Url:		https://github.com/shlomif/perl-error.pm
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Error-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
